@@ -30,7 +30,8 @@ const handleSubmit = (e) => {
   }
 };
 
-  return (
+  return (<>
+    <h1 style={{textAlign: "center"}}>PROJECT MANAGEMENT SYSTEM</h1>
     <Container>
     <h1>Login Form</h1>
     <Form onSubmit={handleSubmit}>
@@ -57,8 +58,7 @@ const handleSubmit = (e) => {
         <p>Not Registred?<Link to="/">Register</Link></p>
       </Form.Group>
     </Form>
-  </Container>
-    
+  </Container></>
   )
 }
 
