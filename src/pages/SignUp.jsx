@@ -22,7 +22,8 @@ const handleSubmit=(e)=>{
   console.log(formData);
 };
 
-  return (
+  return (<>
+  <h1 style={{textAlign: "center"}}>PROJECT MANAGEMENT SYSTEM</h1>
       <Container>
         <h1>Registeration Form</h1>
         <Form onSubmit={handleSubmit}>
@@ -59,6 +60,7 @@ const handleSubmit=(e)=>{
           </Form.Group>
         </Form>
       </Container>
+      </>
   )
 }
 
