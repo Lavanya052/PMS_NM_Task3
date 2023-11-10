@@ -24,7 +24,7 @@ const handleSubmit = (e) => {
   const isLoginSuccessful = true;
 
   if (isLoginSuccessful) {
-    history.push('/dashboard');
+    history.push('/Home');
   } else {
     alert('Login failed. Please check your credentials.');
   }
