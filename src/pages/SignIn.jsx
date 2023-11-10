@@ -22,6 +22,8 @@ const handleSubmit = (e) => {
   history.push('/Home');
 };
 
+const navigate =useNavigate()
+
   return (<>
     <h1 style={{textAlign: "center"}}>PROJECT MANAGEMENT SYSTEM</h1>
     <Container>
@@ -46,7 +48,7 @@ const handleSubmit = (e) => {
             required/>
       </Form.Group>
       <Form.Group>
-        <Button varient="primary" type="submit">Login</Button>
+        <Button varient="primary" type="submit" onClick={()=>navigate("/Home")}>Login</Button>
         <p>Not Registred?<Link to="/">Register</Link></p>
       </Form.Group>
     </Form>
