@@ -19,15 +19,7 @@ const handleChange=(e)=>{
 const handleSubmit = (e) => {
   e.preventDefault();
   console.log(formData);
-
-
-  const isLoginSuccessful = true;
-
-  if (isLoginSuccessful) {
-    history.push('/Home');
-  } else {
-    alert('Login failed. Please check your credentials.');
-  }
+  history.push('/Home');
 };
 
   return (<>

@@ -20,6 +20,7 @@ const handleChange=(e)=>{
 const handleSubmit=(e)=>{
   e.preventDefault();
   console.log(formData);
+  history.push('/SignIn');
 };
 
   return (<>
